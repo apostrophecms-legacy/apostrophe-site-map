@@ -1,5 +1,9 @@
 # Changelog
 
+## UNRELEASED
+
+Adds new `self.include` method taking the `doc` in parameter and returns `true` by default. This method can be overridden on project side to return `false` for specific docs in order to exclude them from sitemap.
+
 ## 2.9.0 (2023-11-03)
 
 Sitemaps now appear as XML source rather than awkwardly rendered text when viewed in the browser. There was never a problem with the XML from Google's perspective, but this improves the developer experience. Thanks to [norbie-nagy](https://github.com/norbie-nagy) for contributing this improvement.

@@ -458,6 +458,10 @@ module.exports = {
       return callback(null);
     };
 
+    // This method can be overridden to exclude
+    // specific docs from sitemap.
+    self.include = doc => true
+
     self.findPieces = function(req, module, projection = {}) {
       return module.find(req, {}, projection).published(true).joins(false).areas(false);
     };
@@ -470,6 +474,9 @@ module.exports = {
     // or is marked private, the output is discarded.
 
     self.output = function(page) {
+      if (!self.include(page)) {
+        return;
+      }
       var locale = page.workflowLocale || defaultLocale;
       if (self.workflow) {
         if (!self.workflow.locales[locale]) {
