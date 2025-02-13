@@ -1,6 +1,6 @@
 # Changelog
 
-## UNRELEASED
+## 2.10.0 (2025-02-13)
 
 Adds new `self.include` method taking the `doc` in parameter and returns `true` by default. This method can be overridden on project side to return `false` for specific docs in order to exclude them from sitemap.
 
