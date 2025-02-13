@@ -460,7 +460,7 @@ module.exports = {
 
     // This method can be overridden to exclude
     // specific docs from sitemap.
-    self.include = doc => true
+    self.include = doc => true;
 
     self.findPieces = function(req, module, projection = {}) {
       return module.find(req, {}, projection).published(true).joins(false).areas(false);
