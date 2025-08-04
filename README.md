@@ -1,3 +1,7 @@
+# ⛔️ **DEPRECATED** — do not use for new projects
+
+See [our current docs](https://docs.apostrophecms.org/)
+
 # apostrophe-site-map
 
 This module generates XML and plaintext sitemaps for sites powered by the [Apostrophe](https://apostrophenow.org) CMS.
